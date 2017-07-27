@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>SONAR HOOTSUITE</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js"></script>
+        <script src="https://d2l6uygi1pgnys.cloudfront.net/jsapi/2-0/hsp.js"></script>
+        <script src="bower_components/knockout/dist/knockout.js"></script>
+        <script src="bower_components/store/dist/store2.js"></script>
+        <script src="asset/template.js"></script>
+        <script src="asset/app.js"></script>
+
+        <link href="asset/sonarsuite.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="hs_stream sonarstream">
+        <div class="ss_topbar">
+            <ul class="hs_topBarControls">
+                    <li class="hs_topBarControlsBtn" title="My Account" onClick="location.href='account.html';">
+                        <i class="icon-person"></i>
+                    </li>
+                    <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                        <i class="icon-search"></i>
+                    </li>
+                    <li class="hs_topBarControlsBtn"  title="Settings" onClick="location.href='welcome.html';">
+                        <i class="icon-settings"></i>
+                    </li>
+                    <li class="hs_topBarControlsBtn" data-dropdown="MenuList" title="More">
+                        <i class="icon-more-vert"></i>
+                    </li>
+            </ul>
+        </div><!--ss_topbar-->
+        <div class="hs_topBar">
+            <div class="hs_topBarContent">
+                <ul class="hs_topBarControls">
+                    <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                        <i class="icon-refresh2"></i>
+                    </li>
+                    <li class="hs_topBarControlsBtn" data-dropdown="Search" title="Search">
+                        <i class="icon-expand-more"></i>
+                    </li>
+                    <li class="hs_topBarControlsBtn" title="My Account">
+                        <i class="icon-close"></i>
+                    </li>
+                </ul>
+                <h1 class="hs_topBarTitle logo"><img src="asset/logo_small.png"> Media</h1>
+            </div><!--hs_topBarContent-->
+            <div class="hs_topBarDropdown hs_dropdownSearch" data-dropdown="Search">
+                <button class="hs_btnCtaSml hs_btnTypeSubmit _user_search">Search</button>
+                <div class="hs_searchWrapper">
+                    <label class="hs_isVisuallyHidden" for="hs_searchInputExample">Search:</label>
+                    <input id="hs_searchInputExample" class="_user_text" type="text" placeholder="e.g. Hootsuite">
+                </div>
+            </div><!--Search-->
+
+            <ul class="hs_topBarDropdown hs_dropdownMenuList" data-dropdown="MenuList">
+                <li class="hs_dropdownMenuListItem"><a href="#">Text Only</a></li>
+                <li class="hs_dropdownMenuListItem"><a href="#">Text + Image</a></li>
+                <li class="hs_dropdownMenuListItem"><a href="#">Clear Stream</a></li>
+            </ul><!--Menu List-->
+        </div><!--hs_topBar-->
+        <div class="ss_welcome ss_container">
+        	<div class="ss_title ss_row">
+            	<h2>Welcome to Sonar on Hootsuite</h2>
+            </div>
+        	<div class="ss_row">
+            	<span class="ss_label">Please define the type of the tab</span>
+                <div class="col2">
+                	<a class="ss_button checked" href="#">Stream</a>
+                </div>
+                <div class="col2">
+                	<a class="ss_button " href="#">Analytics</a>
+                </div>
+            </div><!--ss_row-->
+        	<div class="ss_row">
+            	<span class="ss_label">Please choose a channel to display</span>
+                <div class="col2">
+                	<a class="ss_button checked" href="#">Consolidated Channels</a>
+                </div>
+                <div class="col2">
+                	<a class="ss_button" href="#">Twitter Only</a>
+                </div>
+                <div class="col2">
+                	<a class="ss_button" href="#">Media Only</a>
+                </div>
+                <div class="col2">
+                	<a class="ss_button" href="#">Forum Only</a>
+                </div>
+                <div class="col2">
+                	<a class="ss_button" href="#">Facebook Only</a>
+                </div>
+                <div class="col2">
+                	<a class="ss_button" href="#">Blogs Only</a>
+                </div>
+            </div><!--ss_row-->
+        	<div class="ss_row">
+            	<span class="ss_label">Please select wich topics to display</span>
+                <div class="col2">
+                	<a class="ss_button checked" href="#">Brand</a>
+                </div>
+                <div class="col2">
+                	<a class="ss_button checked" href="#">Industry</a>
+                </div>
+                <div class="col2">
+                	<a class="ss_button" href="#">Competitor</a>
+                </div>
+            </div><!--ss_row-->
+        	<div class="ss_row_btn center">
+        		<a href="loading_tab.html" class="button btn_full">Create My Tab!</a>
+            </div><!--ss_row-->
+        </div><!--ss_login-->
+    </div><!--sonarstream-->
+        <script>
+        //var isLoading = true;
+        </script>
+        <script src="asset/utils.js"></script>
+		<script src="asset/sonar.js"></script>
+    </body>
+</html>
